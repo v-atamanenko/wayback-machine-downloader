@@ -5,6 +5,10 @@
 
 Download an entire website from the Internet Archive Wayback Machine.
 
+## Fork description
+Based on [this pullrequest](https://github.com/hartator/wayback-machine-downloader/pull/280/) but adds a fallback to delays in case http.start() errors out.
+While the original pullrequest solves rate limiting issues for normal usage, delays help when you call the downloader many times to look for single URLs.
+
 ## Installation
 
 You need to install Ruby on your system (>= 1.9.2) - if you don't already have it.
